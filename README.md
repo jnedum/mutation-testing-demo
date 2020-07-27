@@ -1,6 +1,11 @@
 # Mutation Testing Demo
 This code illustrates the benefits of running a mutation testing library.  This example usese PITest (https://pitest.org) as the library.
 
+## Example App
+This example code highlights a portion of job board functionality.  There is a `Listing` domain object and a `Applicant` domain object.
+
+The JobService will attempt to match Applicants with Listings.  If the minimum salary for the Listing meets the Applicant's minimum salary, then a match can occur, and the Listing should be attached as "currently matched" to the Applicant.
+
 ## Usage
 1. Build and run the tests: `./gradlew test`
 2. Run PITest: `./gradlew pitest`
