@@ -8,10 +8,10 @@ public class JobService {
     public boolean isJobMatch(Listing listing, Applicant applicant) {
         boolean isMatch = false;
 
-        if ( listing.minSalary() >= applicant.minSalaryExpectation() )
+        if ( listing.minSalary() >= applicant.minSalaryExpectation() ) {
             isMatch = true;
-        applicant.currentMatch(listing);
-
+            applicant.currentMatch(listing);
+        }
         return isMatch;
     }
 }
